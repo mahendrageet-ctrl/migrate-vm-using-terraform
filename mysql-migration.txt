@@ -1,0 +1,8 @@
+# On EC2
+mysqldump -u root -p db_name > db.sql
+
+# Transfer
+scp db.sql ubuntu@GCP_IP:/home/ubuntu/
+
+# On GCP
+mysql -u root -p db_name < db.sql
