@@ -1,0 +1,3 @@
+
+#Point domain to: GCP external IP
+#aws ec2 terminate-instances --instance-ids i-my-ec2-ids

@@ -1,0 +1,7 @@
+rsync -avz -e "ssh -i key.pem" ec2-user@EC2_IP:/var/www/ /var/www/
+
+
+sudo apt update
+sudo apt install nginx -y
+
+scp ec2-user@EC2_IP:/etc/nginx/nginx.conf /etc/nginx/
