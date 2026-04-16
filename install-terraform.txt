@@ -1,0 +1,5 @@
+metadata_startup_script = <<-EOF
+  #!/bin/bash
+  apt update
+  apt install nginx -y
+EOF
